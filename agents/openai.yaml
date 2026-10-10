@@ -1,0 +1,4 @@
+interface:
+  display_name: "讲义生成器"
+  short_description: "把课程材料转成可编译的中文 LaTeX 复习讲义：列出知识要点、互动式询问掌握程度、按控制原理讲义风格生成"
+  default_prompt: "请使用 $lecture-notes 把这个文件夹里的课程材料做成讲义：先读取材料并列出知识要点，再逐项问我掌握程度，最后按控制原理讲义风格生成可编译的 LaTeX 中文讲义（默认排除背景与发展史，聚焦考点）。"

@@ -1,0 +1,47 @@
+% !TeX program = xelatex
+% 讲义编译入口模板（讲义生成器 skill 默认模板）
+% 用 xelatex 编译两遍：xelatex main.tex; xelatex main.tex
+\documentclass[UTF8,a4paper,11pt,fontset=fandol]{ctexart}
+\usepackage[margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs,longtable,array}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,trees}
+\usepackage{hyperref}
+\hypersetup{unicode=true,hidelinks}
+\graphicspath{{figures/}}
+\captionsetup{font=small,labelfont=bf}
+\linespread{1.18}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep,leftmargin=2em}
+% 脚注回查原文页码
+\newcommand{\src}[1]{\unskip\footnote{对应原文第~#1~页。}}
+\newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\title{讲义标题\\[2pt]\large 副标题（可选）}
+\author{依据〈原材料名称〉重组}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+% 原始材料信息：出处、作者、年份/版本、页数、章节范围。
+\noindent\textbf{原始材料：}
+〈原题目、作者、来源版本，页数。〉
+
+\medskip
+\noindent\textbf{阅读说明：}
+本文是面向自学的\textbf{完整讲义}：覆盖原材料的全部实质内容——每个定义、定理与例题（含完整计算过程），并把理解所需的背景与推导融入行文。按需说明：是否排除了发展史/背景、正文如何重组、脚注页码如何回查、插图来源（原图提取/重绘）、以及原材料是否不完整（如某节被截断）。默认读者已学过〈前置知识〉。
+
+\tableofcontents
+
+% 正文分节：按知识依赖关系拆分为 sections/xx-*.tex，用 \input 引入。
+% \input{sections/01-...}
+% \input{sections/02-...}
+% ...
+
+\end{document}
